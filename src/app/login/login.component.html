@@ -1,0 +1,17 @@
+<h2>Login Form</h2>
+<form [formGroup]="loginForm" autocomplete="off">
+    <div>
+        <label for="username"> Username: </label>
+    <input type="text" name="username" id="username" formControlName="username">
+    </div>
+    <div>
+        <label for="passowrd"> Password: </label>
+    <input type="password" name="password" id="password" formControlName="password">
+    </div>
+    <button type="submit" (click)="submitForm()"> Submit </button>
+</form>
+
+<div>
+    Entered Username: {{ userNameValue }} <br>
+    Entered Password: {{ passwordValue }}
+</div>

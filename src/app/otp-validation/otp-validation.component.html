@@ -1,0 +1,15 @@
+<h1>Otp Validation</h1>
+<form [formGroup]="otpValidationForm">
+    <div>
+        <label for="otp">Otp: </label>
+        <input type="number" name="otp" id="Otp" formControlName="otp">
+    </div>
+    <div>
+        @if (validationSuccess) {
+            <h5>Validation Success</h5>
+        } @else {
+            <button type="submit" (click)="checkOtp()">Validate Otp</button>
+        }
+    </div>
+</form>
+
