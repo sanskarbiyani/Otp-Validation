@@ -51,6 +51,16 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "otp": {
+              "fileReplacements": [
+                {
+                  "replace": "src/main.ts",
+                  "with": "src/otp-main.ts"
+                }
+              ],
+              "outputPath": "dist/otp-element",
+              "index": "src/index.html"
             }
           },
           "defaultConfiguration": "production"
